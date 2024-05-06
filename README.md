@@ -1,3 +1,5 @@
+<p align="center"><img alt="PowerShell Xpedite logo" src="https://github.com/mia-kiwi/PSXpedite/blob/dev/Assets/Banner/psxpedite.png"></p>
+
 # PSXpedite
 
 PSXpedite is a PowerShell module designed to streamline the process of creating, versioning, and managing PowerShell modules. With a focus on file-based operations, PSXpedite ensures compatibility across different systems, making module management a breeze.
