@@ -8,7 +8,7 @@
 #                                                                                                  #
 #    Level:          0                                                                             #
 #    Classification: PUBLIC                                                                        #
-#    Version:        24.1.0                                                                        #
+#    Version:        24.1.1                                                                        #
 #                                                                                                  #
 #    Name:           PSXPEDITE                                                                     #
 #    Title:          FILE-BASED POWERSHELL MODULE AND VERSION DISTRIBUTION SYSTEM                  #
@@ -17,12 +17,12 @@
 #    Language:       POWERSHELL                                                                    #
 #    Contributor(s): MDELAND002                                                                    #
 #    Created:        2024-04-15                                                                    #
-#    Updated:        2024-05-06                                                                    #
+#    Updated:        2024-05-18                                                                    #
 #                                                                                                  #
-#    SNAF:           [PSXPEDITE24.1.0 ¦ LEVEL-0] - FILE-BASED POWERSHELL MODULE AND VERSION        #
+#    SNAF:           [PSXPEDITE24.1.1 ¦ LEVEL-0] - FILE-BASED POWERSHELL MODULE AND VERSION        #
 #                    DISTRIBUTION SYSTEM                                                           #
 #    DRL:            DRL://AFS/IT/DPD/PSXPEDITE                                                    #
-#    DID:            UDIS-0000000000000000000Z                                                     #
+#    DID:            AFS 000007                                                                    #
 #    Location:                                                                                     #
 #                                                                                                  #
 #    2024 (c) THE A.F.S. CORPORATION. All rights reserved.                                         #
@@ -34,12 +34,12 @@ $Script:PSXConfiguration = @{
     ModulesRoot            = "$PSScriptRoot\Modules"
     VersionRegEx           = '^(?<year>\d{1,2})\.(?<major>\d+)\.(?<minor>\d+)(?:\.(?<build>\d+))?(?:\-(?<language>[a-zA-Z]{2}))?$'
     VersionIncompleteRegEx = '^(?<year>\d{1,2}|\*)\.(?<major>\d+|\*)\.(?<minor>\d+|\*)(?:\.(?<build>\d+|\*))?(?:\-(?<language>[a-zA-Z]{2}))?$'
-    Name                   = 'PSXPEDITE:24.1.0'
-    Version                = '24.1.0'
+    Name                   = 'PSXPEDITE:24.1.1'
+    Version                = '24.1.1'
     VersionFilterRegEx     = "^(?<year>\d{1,2}|\*)\.(?<major>\d+|\*)\.(?<minor>\d+|\*)$"
     ModuleFileExtensions   = @("psd1", "psm1", "dll")
-    MaxRequirementsDepth   = 10
-    AllowedModuleNameChars = "[a-zA-Z_\-\.]"
+    MaxRequirementsDepth   = 15
+    AllowedModuleNameChars = "[a-zA-Z_\-\.0-9]"
 }
 
 function Get-PsxConf {
